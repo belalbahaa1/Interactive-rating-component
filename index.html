@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- my style -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- rating card -->
+    <div class="rating-card">
+      <!-- card container -->
+      <main>
+        <div class="star-logo">
+          <img src="icons/icon-star.svg" alt="" />
+        </div>
+        <!-- card header -->
+        <h2 class="title">How did we do ?</h2>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <!-- rating list -->
+        <div class="rating-state">
+          <div class="rating-number">1</div>
+          <div class="rating-number">2</div>
+          <div class="rating-number">3</div>
+          <div class="rating-number">4</div>
+          <div class="rating-number">5</div>
+        </div>
+        <!-- submit button -->
+        <button class="submit-btn">submit</button>
+      </main>
+    </div>
+
+    <!-- after rating  -->
+    <div class="result-card card-visible">
+      <div class="content">
+        <div class="thankyou-logo">
+          <img src="icons/illustration-thank-you.svg" alt="" />
+        </div>
+        <!-- result content -->
+        <p class="rating-result">
+          You selected <span class="selection">4</span> out of 5
+        </p>
+        <!-- result headline -->
+        <h1>Thank you!</h1>
+        <!-- appreciation -->
+        <p class="appreciation">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://twitter.com/belalBahaa66" target="_blank"
+        >Your Name Here</a
+      >.
+    </div>
+  </body>
+</html>
