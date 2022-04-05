@@ -1,0 +1,238 @@
+:root {
+    /* primary */
+    --orange: hsl(25, 97%, 53%);
+    /* neutral */
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+  /* font */
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;1,700&family=Rubik:wght@300;400;500&display=swap");
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+  *,
+::before,
+::after {
+    box-sizing: inherit;
+}
+  /* body style */
+body {
+    font-family: "Overpass", sans-serif;
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--very-dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* card style */
+.rating-card,
+.result-card {
+    width: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-blue);
+    border-radius: 20px;
+}
+.star-logo {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--very-dark-blue);
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    width: 85%;
+    height: 85%;
+}
+h2 {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+p {
+    color: var(--medium-grey);
+    width: 95%;
+    font-size: 15px;
+}
+.rating-state {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rating-number {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    line-height: 35px;
+    margin-top: 20px;
+    background-color: var(--light-grey);
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+.rating-number:hover {
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: 700;
+}
+/* the selected rating */
+.selected {
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: 700;
+}
+.submit-btn {
+    width: 100%;
+    color: var(--white);
+    background-color: var(--orange);
+    padding: 8px 0;
+    margin: 20px 0;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+}
+.submit-btn:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+/* card visibility */
+.card-visible {
+    display: none;
+}
+/* after rating style */
+.content {
+    width: 85%;
+    height: 75%;
+    text-align: center;
+    margin: 30px auto;
+}
+.thankyou-logo {
+    width: 40%;
+    height: 85px;
+    margin: auto;
+}
+
+.thankyou-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.rating-result {
+    width: 60%;
+    margin: 30px auto;
+    background-color: var(--very-dark-blue);
+    color: var(--orange);
+    padding: 5px 10px;
+    border-radius: 40px;
+}
+h1 {
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: var(--white);
+}
+.appreciation {
+    width: 90%;
+    font-size: 15px;
+    margin: 10px auto;
+    color: var(--light-grey);
+}
+
+/* attribution */
+
+
+.attribution {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--light-grey);
+} 
+.link {
+    color: var(--orange);
+    text-decoration: none;
+}
+
+
+/* responsive display */
+
+/* mobile style */
+@media (max-width: 1200px) {
+    .rating-card {
+      width: 30%;
+    }
+    .rating-result {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .rating-card,
+    .result-card {
+      width: 35%;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .rating-card,
+    .result-card {
+      width: 40%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .rating-card,
+    .result-card {
+      width: 50%;
+    }
+    p {
+      font-size: 16px;
+    }
+    .number-container {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .rating-number {
+      font-size: 14px;
+    }
+  
+    button {
+      margin-bottom: 35px;
+      padding: 15px 0;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .rating-card,
+    .result-card {
+      width: 60%;
+    }
+  }
+  @media (max-width: 450px) {
+    .rating-card,
+    .result-card {
+      width: 90%;
+    }
+  }
