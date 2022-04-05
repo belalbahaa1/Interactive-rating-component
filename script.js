@@ -6,16 +6,13 @@ const ratingNum = document.querySelectorAll(".rating-number");
 const selection = document.querySelector(".selection");
 let score = 0;
 
-// selection.innerHTML = "2"
-
 // to clear previous choices cuz you only make one
-
 const clearSelection = () => {
   ratingNum.forEach((rating) => {
     rating.classList.remove("selected");
   });
 };
-
+// choice of rating
 ratingContent.addEventListener("click", (e) => {
   clearSelection();
   if ((e.target.classList = "rating-number")) {
@@ -26,7 +23,7 @@ ratingContent.addEventListener("click", (e) => {
     selection.innerHTML = score;
   }
 });
-
+// result visibility
 const showResult = () => {
   cardContent.classList.add("card-visible");
   resultCard.classList.remove("card-visible");
